@@ -12,16 +12,22 @@
 		return $diferencia->format("%y");
 	}
 	
+	function mayorDeEdad ($edad)
+	{
+		if($edad>=18)
+		{
+			$mayorEdad = true;
+			return mayorEdad;
+			printf("Usted es mayor de edad: "+$mayorEdad);
+		}
+		else
+		{
+			$mayorEdad = false;
+			return mayorEdad;
+		}
+	}
+	
 	$edad = obtener_edad_segun_fecha($fechaNacimiento);
-
-	if($edad>=18)
-	{
-		$mayorEdad == true;
-		printf("Usted es mayor de edad: "+$mayorEdad);
-	}
-	else
-	{
-		$mayorEdad == false;
-	}
+	$mayorEdad = mayorDeEdad($edad);
 	
 ?>
